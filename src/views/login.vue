@@ -1,6 +1,6 @@
 <template>
 <div class="">
-  登录页面
+  登录页面  只用测试跳转
 </div>
 </template>
 <script>
