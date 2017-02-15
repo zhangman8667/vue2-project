@@ -1,0 +1,103 @@
+@blue: #61C7D1;
+@blue-h: #59BEC6;
+@yellow: #FFA171;
+@cancel: #CFCFD1;
+@background: #f4f4f4;
+@border-color: #ebebeb;
+@title-back:#f9f9f9;
+@color: #555555;
+@border-c:#cbcbcb;
+@rate: 100;
+@base: 1rem;
+@sidebar-w: 100px;
+@top-h: 60px;
+.border-shadow {
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.10);
+}
+.display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: horizontal;
+    -moz-flex-direction: horizontal;
+    -ms-flex-direction: horizontal;
+    flex-direction: horizontal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+.flex(@f) {
+    -webkit-box-flex: @f;
+    -webkit-flex: @f;
+    -moz-box-flex: @f;
+    -moz-flex: @f;
+    -ms-flex: @f;
+    flex: @f;
+}
+.text-overflow(@t) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @t;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-box-pack: center;
+    white-space: normal;
+}
+.font-nomal {
+    font-size: 14px;
+    color: #555555;
+    letter-spacing: 0.52px;
+}
+.font-nomal-9{
+  color: #999;
+  letter-spacing: 0.52px;
+}
+.transform(@t){
+  transform: rotate(@t);
+  -o-transform: rotate(@t);
+  -webkit-transform: rotate(@t);
+  -moz-transform: rotate(@t);
+}
+.common-input {
+	width: 100%;
+	height: 30px;
+	color: #666;
+	padding: 8px 20px;
+	font-size: 14px;
+	letter-spacing: 0.52px;
+	border:1px solid @border-c;
+	border-radius: 20px;
+	background: #fff;
+}
+.common-input:focus{
+	border:1px solid @blue;
+	border-radius: 20px;
+}
+
+.common-input-search {
+	width: 100%;
+	height: 30px;
+	color: #666;
+	padding: 8px 20px;
+	font-size: 14px;
+	letter-spacing: 0.52px;
+	border:1px solid @border-color;
+	border-radius: 20px;
+	background: #fff;
+}
+.common-input-search:focus{
+	border:1px solid @blue;
+	border-radius: 20px;
+}
+.border-common{
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+}

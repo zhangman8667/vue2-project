@@ -1,0 +1,7 @@
+build/*.js
+config/*.js
+test/**
+node_modules/**
+src/utils/qiniu/*.js
+src/utils/qiniu.js
+src/qiniu/*.js
