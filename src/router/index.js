@@ -8,6 +8,8 @@ import VueOrder from '../views/vue/vue_home'
 
 import ReportsOrder from '../views/reports/order'
 import ReportsProduct from '../views/reports/product'
+
+import ElementInfo from '../views/element/element'
 Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
@@ -22,7 +24,9 @@ const router = new VueRouter({
       { path: '/vue/order', component: VueOrder },
       // 数据报表
       { path: '/reports/order', component: ReportsOrder },
-      { path: '/reports/product', component: ReportsProduct }
+      { path: '/reports/product', component: ReportsProduct },
+      // element
+      { path: '/element/info', component: ElementInfo }
     ]
   }, {path: '/firewall/login', component: Login}
   ]})
@@ -44,7 +48,10 @@ router.beforeEach((to, from, next) => {
     next()
   } else { // 跳转登陆页面
     next()
-    // next({ path: '/firewall/login' })
+    // next({
+    //   path: '/firewall/login',
+    //   query: {redirect: to.fullPath} // 登陆成功后跳转到之前的页面
+    // })
   }
 })
 export default router

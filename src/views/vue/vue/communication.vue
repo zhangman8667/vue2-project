@@ -40,7 +40,7 @@ export default {
   },
   computed: {
     allmoney () {
-      var _all = this.info.money1 + this.info.money2 + this.info.money3 + this.info.money4
+      var _all = this.info.money1 + this.info.money2 + this.info.money3 + parseInt(this.info.money4)
       return _all
     }
   },
@@ -53,7 +53,6 @@ export default {
       this.show = false
     },
     sure (name) {
-      console.log(name)
       this.info.name = name
     }
   },

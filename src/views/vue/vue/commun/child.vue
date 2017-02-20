@@ -40,7 +40,7 @@ export default {
   },
   computed: {
     allmoney () {
-      var _all = this._info.money1 + this._info.money2 + this._info.money3 + this._info.money4
+      var _all = this._info.money1 + this._info.money2 + this._info.money3 + parseInt(this._info.money4)
       return _all
     }
   },
@@ -70,7 +70,7 @@ export default {
   .info{
     font-size: 16px;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 20px 30px;
     line-height: 40px;
     p{
       span{
